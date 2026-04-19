@@ -8,14 +8,14 @@ return {
           clear_suggestion = "<C-]>",
           accept_word = "<C-j>",
         },
-        ignore_filetypes = {}, -- Optional: add filetypes to ignore
+        ignore_filetypes = {},
         color = {
           suggestion_color = "#ffffff",
           cterm = 244,
         },
-        log_level = "info", -- "info", "warn", "error", "hint"
-        disable_inline_completion = false, -- disables inline completion for use with cmp
-        disable_keymaps = false, -- disables built-in keymaps for more control
+        log_level = "info",
+        disable_inline_completion = false,
+        disable_keymaps = false,
       })
     end,
   },
@@ -60,21 +60,6 @@ return {
   },
   { "folke/trouble.nvim", enabled = false },
   { "nvim-tree/nvim-web-devicons", opts = { default = true, color_icons = true } },
-  {
-    "nvim-telescope/telescope.nvim",
-    opts = {
-      defaults = {
-        hidden = true,
-        no_ignore = true,
-      },
-      pickers = {
-        find_files = {
-          hidden = true,
-          no_ignore = true,
-        },
-      },
-    },
-  },
   { import = "lazyvim.plugins.extras.lang.typescript" },
   {
     "nvim-treesitter/nvim-treesitter",
@@ -119,18 +104,13 @@ return {
     },
   },
   {
-    "nvim-tree/nvim-tree.lua",
+    "folke/snacks.nvim",
     opts = {
-      filters = {
-        dotfiles = false,
-        git_ignored = false,
-      },
-      renderer = {
-        icons = {
-          show = {
-            file = true,
-            folder = true,
-            folder_arrow = true,
+      picker = {
+        sources = {
+          files = {
+            hidden = true,
+            ignored = true,
           },
         },
       },
