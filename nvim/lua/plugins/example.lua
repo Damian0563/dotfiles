@@ -20,15 +20,11 @@ return {
     end,
   },
   {
-    "rebelot/kanagawa.nvim",
+    "folke/tokyonight.nvim",
     priority = 1000,
+    lazy = false,
     config = function()
-      require("kanagawa").setup({
-        theme = "dragon",
-        transparent = false,
-        terminalColors = true,
-      })
-      vim.cmd.colorscheme("kanagawa")
+      vim.cmd.colorscheme("tokyonight-night")
     end,
   },
   {
