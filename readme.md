@@ -9,3 +9,7 @@ This is a collection of my dotfiles for my Ubuntu machine. I use them for my per
 | Zsh     | `~/.zshrc`                     |
 | Ghostty | `~/.config/ghostty/config.ghostty` |
 | Neovim  | `~/.config/nvim`               |
+
+
+
+git clone https://github.com/tmux-plugins/tpm /home/damian/.tmux/plugins/tpm

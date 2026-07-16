@@ -1,13 +1,7 @@
 window-decoration = false
 background-opacity = 0.92
 background-blur-radius = 20
-window-padding-x = 4
-window-padding-y = 4
-theme=Kitty Default
-#foreground = #00ff00
-#cursor-color = #00ff00
-#selection-background = #004400
-#selection-foreground = #ffffff
+theme = Catppuccin Mocha
 maximize=true
 fullscreen=true
 window-height=1080
